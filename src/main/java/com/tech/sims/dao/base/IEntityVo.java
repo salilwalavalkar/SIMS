@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * EntityVo Interface which extends Serializable
  * 
- * @author shailendra.
+ * @author salil.
  */
 public interface IEntityVo extends Serializable {
 }

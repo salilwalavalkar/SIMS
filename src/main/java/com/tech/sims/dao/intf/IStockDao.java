@@ -9,7 +9,7 @@ import com.tech.sims.dao.entity.StockEVO;
 /**
  * Interface definition for StockDao.
  * 
- * @author shailendra.
+ * @author salil.
  * @version 1.0
  */
 public interface IStockDao extends IDao {

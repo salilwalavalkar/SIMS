@@ -16,7 +16,7 @@ import com.tech.sims.dao.intf.IStockDao;
 /**
  * StockDao Implementation
  * 
- * @author shailendra.
+ * @author salil.
  * @version 1.0
  */
 public class StockDao extends AbstractDaoImpl implements IStockDao {

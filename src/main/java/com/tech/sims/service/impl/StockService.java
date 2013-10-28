@@ -19,7 +19,7 @@ import com.tech.sims.service.intf.IStockService;
  * Stock service implementation for STockDetails which extends
  * AbstractController
  * 
- * @author shailendra.
+ * @author salil.
  * @version 1.0
  */
 public class StockService implements IStockService {

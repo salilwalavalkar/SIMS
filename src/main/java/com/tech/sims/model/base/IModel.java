@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Model Interface.
  * 
- * @author shailendra
+ * @author salil
  * @version 1.0
  */
 public interface IModel extends Serializable {

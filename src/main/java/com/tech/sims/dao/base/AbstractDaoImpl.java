@@ -7,7 +7,7 @@ import org.springframework.orm.hibernate3.HibernateTemplate;
  * Abstract Class provide the Instance of HibernateTemplate to execute the query
  * by it's implementor classes.
  * 
- * @author shailendra
+ * @author salil
  * @version 1.0
  */
 public abstract class AbstractDaoImpl implements IDao {

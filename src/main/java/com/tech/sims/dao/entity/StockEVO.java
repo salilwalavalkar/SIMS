@@ -10,7 +10,7 @@ import com.tech.sims.dao.base.IEntityVo;
 /**
  * Student Entity Value Object.
  * 
- * @author shailendra
+ * @author salil
  * @version 1.0
  */
 @Entity

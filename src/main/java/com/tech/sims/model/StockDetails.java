@@ -5,7 +5,7 @@ import com.tech.sims.model.base.IModel;
 /**
  * StockModel Implementation
  * 
- * @author shailendra.
+ * @author salil.
  * @version 1.0
  */
 public class StockDetails implements IModel{

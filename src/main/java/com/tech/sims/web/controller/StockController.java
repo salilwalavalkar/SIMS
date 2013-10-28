@@ -21,7 +21,7 @@ import com.tech.sims.service.intf.IStockService;
 /**
  * StockController for all stock operations
  * 
- * @author shailendra.
+ * @author salil.
  * @version 1.0
  */
 @Controller
