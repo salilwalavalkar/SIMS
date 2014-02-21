@@ -3,8 +3,11 @@ Updated: Feb 2014
 
 Tech Contents:
 Maven 2
+
 Spring 3 + Spring Security
+
 Hibernate 3
+
 HSQL DB
 
 Details: This project shows the basic flow of a Maven 2 + Spring 3 + Hiberate 3 + HSQLDB (Database) project.
