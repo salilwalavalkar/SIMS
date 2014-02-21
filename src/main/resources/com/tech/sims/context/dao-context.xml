@@ -14,5 +14,7 @@
 	<bean id="stockDao" class="com.tech.sims.dao.impl.StockDao">
 	    <property name="sessionFactory" ref="springSessionFactory"/>
 	</bean>
-		
+	<bean id="userDao" class="com.tech.sims.dao.impl.UserDao">
+	    <property name="sessionFactory" ref="springSessionFactory"/>
+	</bean>
 </beans>

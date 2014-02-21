@@ -8,7 +8,29 @@
 		<param-name>registerName</param-name>
 		<param-value>sims</param-value>
 	</context-param>
-	
+	<context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+        	classpath:com/tech/sims/context/customApplicationSecurity.xml
+        	classpath:com/tech/sims/context/customApplicationContext.xml
+        </param-value>
+    </context-param>
+    
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    
+    <!-- Spring Security Filter - Start -->
+    <filter>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- Spring Security Filter - End -->
+        		
 	<!-- Context Mapping - Start -->
 	<servlet>
 	    <display-name>simsViewController</display-name>   

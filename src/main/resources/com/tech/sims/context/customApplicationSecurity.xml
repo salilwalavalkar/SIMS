@@ -1,0 +1,42 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+	<!-- The below says that we want all URLs within our application to be secured, 
+		requiring the role ROLE_USER to access them. The <http> element is the parent 
+		for all web-related namespace functionality. The <intercept-url> element 
+		defines a pattern which is matched against the URLs of incoming requests 
+		using an ant path style syntax[2]. The access attribute defines the access 
+		requirements for requests matching the given pattern. With the default configuration, 
+		this is typically a comma-separated list of roles, one of which a user must 
+		have to be allowed to make the request.-->
+    
+    <http auto-config="true">
+		<intercept-url pattern="/sims/stock/homePage*" access="ROLE_USER" />
+	</http>	
+	
+	<beans:bean id="userHelper" class="com.tech.sims.helper.UserHelper" />
+	
+	<authentication-manager>
+		<!-- XML file based auth - Disabled - Start -->
+		<!-- 
+		<authentication-provider>
+			<user-service>
+				<user name="User1" password="123456" authorities="ROLE_USER" />
+				<user name="User2" password="654321" authorities="ROLE_ADMIN" />
+			</user-service>
+		</authentication-provider> 
+		-->
+		<!-- XML file based auth - Disabled - End -->
+		
+		<!-- DB call for auth - Enabled - Start -->
+		<authentication-provider user-service-ref="userHelper"/>
+		<!-- DB call for auth - Enabled - End -->
+		
+	</authentication-manager>
+
+</beans:beans>

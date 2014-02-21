@@ -10,4 +10,5 @@
 		http://www.springframework.org/schema/tx
 		http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 	<bean id="IStockService" class="com.tech.sims.service.impl.StockService" />
+	<bean id="IUserService" class="com.tech.sims.service.impl.UserService" />
 </beans>
